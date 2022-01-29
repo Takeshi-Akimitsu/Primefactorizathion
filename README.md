@@ -42,15 +42,11 @@ rostopic echo /primefactorizathion
 ```
 
 # 実行結果
-下記のリンクよりこのデバイスドライバの動作が確認できる  
+下記のリンクよりこのパッケージの動作が確認できる  
 https://youtu.be/cU3D8GxwP2c
 
 # 参考
-[Raspberry Pi 3 ModelB](https://datasheets.raspberrypi.com/rpi3/raspberry-pi-3-b-reduced-schematics.pdf)  
 
-[TBTB6643KQデータシート](http://www.kyohritsu.jp/eclib/OTHER/DATASHEET/TOSHIBA/tb6643kq.pdf)
-
-https://github.com/MibuchiYuta/Control_DCmotor_RaspberryPi
 
 # 謝辞
 このデバイスドライバは[三渕優太さん](https://github.com/MibuchiYuta/Control_DCmotor_RaspberryPi
