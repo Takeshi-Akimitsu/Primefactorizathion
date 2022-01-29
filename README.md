@@ -11,8 +11,9 @@ primefactorizathion.pyではprimenumber.pyにおいて入力された整数が�
 - ROS noetic
   
 # インストール方法
+このパッケージをROSのsrcフォルダ下にインストールする。
 ```
-git clone git@github.com:Takeshi-Akimitsu/Motor_RaspberryPi.git
+git clone 
 cd Motor_RaspberryPi
 make
 sudo insmod mymotor.ko  
