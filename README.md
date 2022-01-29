@@ -46,7 +46,7 @@ rostopic echo /primefactorizathion
 https://youtu.be/cU3D8GxwP2c
 
 # 参考
-
+https://amateur-engineer-blog.com/prime/
 
 # 謝辞
 このデバイスドライバは[三渕優太さん](https://github.com/MibuchiYuta/Control_DCmotor_RaspberryPi
