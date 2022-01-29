@@ -42,7 +42,7 @@ rostopic echo /primefactorizathion
 ```
 
 # 実行結果
-下記のリンクよりこのパッケージの動作が確認できる  
+下記のリンクよりこのパッケージの動作が確認できる。  
 https://youtu.be/cU3D8GxwP2c
 
 # 参考
