@@ -43,7 +43,7 @@ rostopic echo /primefactorizathion
 
 # 実行結果
 下記のリンクよりこのパッケージの動作が確認できる。  
-https://youtu.be/cU3D8GxwP2c
+https://youtu.be/0Oh3foGFxl4
 
 # 参考
 https://amateur-engineer-blog.com/prime/
