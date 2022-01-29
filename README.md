@@ -13,7 +13,7 @@ primefactorizathion.pyではprimenumber.pyにおいて入力された整数が�
 # インストール方法
 このパッケージをROSのsrcフォルダ下にインストールする。
 ```
-git clone 
+git clone git@github.com:Takeshi-Akimitsu/Primefactorizathion.git
 cd Motor_RaspberryPi
 make
 sudo insmod mymotor.ko  
