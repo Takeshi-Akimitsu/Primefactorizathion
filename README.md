@@ -6,9 +6,8 @@ primenumber.pyでは2以上の整数が入力された場合は入力された�
 primefactorizathion.pyではprimenumber.pyにおいて入力された整数が素数であるなら素数であると出力し、合成数であるならその数を素因数分解した結果を出力する。なお、0と1は素数でないが合成数でもないため素数ではないと出力する。
 
 # 動作環境
-|OS|Ubuntu Server 20.04.3 LTS|
-|---|---|
-|ハードウェア|Raspberry Pi 3 ModelB|
+OS　Ubuntu Server 20.04.3 LTS
+ハードウェア Raspberry Pi 3 ModelB
   
 # インストール方法
 ```
