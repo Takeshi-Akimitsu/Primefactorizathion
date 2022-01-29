@@ -22,9 +22,6 @@ while not rospy.is_shutdown():
                     prime_list.remove(i)
                     break
 
-        #if n == prime_list[len(prime_list)-1]:
-            #print('{0} is primenumber'.format(n))
-
     prime_list.append(n)
 
     prime = Int32MultiArray(data=prime_list)
