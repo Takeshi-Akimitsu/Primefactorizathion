@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import Int32MultiArray
 
 rospy.init_node('prime')
-pub = rospy.Publisher('prime_list', Int32MultiArray, queue_size=10)
+pub = rospy.Publisher('primenumber', Int32MultiArray, queue_size=10)
 rate = rospy.Rate(10)
 
 while not rospy.is_shutdown():

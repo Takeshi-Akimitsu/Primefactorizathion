@@ -69,7 +69,7 @@ def cb(prime):
 
 if __name__ == '__main__': 
         rospy.init_node('primefactorizathion')
-        sub = rospy.Subscriber('prime_list', Int32MultiArray, cb)
+        sub = rospy.Subscriber('primenumber', Int32MultiArray, cb)
         pub = rospy.Publisher('primefactorizathion', String, queue_size=10)
         rate = rospy.Rate(10)
         while not rospy.is_shutdown():
