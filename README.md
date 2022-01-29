@@ -13,31 +13,40 @@ primefactorizathion.pyではprimenumber.pyにおいて入力された整数が�
 # インストール方法
 このパッケージをROSのsrcフォルダ下にインストールする。
 ```
+cd ~/catkin_ws/src
 git clone git@github.com:Takeshi-Akimitsu/Primefactorizathion.git
-cd Motor_RaspberryPi
-make
-sudo insmod mymotor.ko  
-sudo chmod 666 /dev/mymotor0  
+cd ..
+catkin_make  
 ```
 
 # 実行
-
-# アンインストール
+端末1でROSを立ち上げる。
 ```
-sudo rmmod mymotor 
+roscore
+```
+端末2でprimenumber.pyを実行する。
+```
+rosrun Primefactorizathion primenumber.py
+```
+端末3でprimenumber.pyがPublishしたデータを取り出せるようにする。
+```
+rostopic echo /primenumber
+```
+端末4でprimefactorizathion.pyを実行する。
+```
+rosrun Primefactorizathion primefactorizathion.py
+```
+端末5でprimefactorizathion.pyがPublishしたデータを取り出せるようにする。
+```
+rostopic echo /primefactorizathion
 ```
 
 # 実行結果
-下記のリンクよりこのデバイスドライバの動作が確認できる  
+下記のリンクよりこのパッケージの動作が確認できる  
 https://youtu.be/cU3D8GxwP2c
 
 # 参考
-[Raspberry Pi 3 ModelB](https://datasheets.raspberrypi.com/rpi3/raspberry-pi-3-b-reduced-schematics.pdf)  
-
-[TBTB6643KQデータシート](http://www.kyohritsu.jp/eclib/OTHER/DATASHEET/TOSHIBA/tb6643kq.pdf)
-
-https://github.com/MibuchiYuta/Control_DCmotor_RaspberryPi
+https://amateur-engineer-blog.com/prime/
 
 # 謝辞
-このデバイスドライバは[三渕優太さん](https://github.com/MibuchiYuta/Control_DCmotor_RaspberryPi
-)のコードを参考に製作しました。誠にありがとうございます。
+このパッケージのprimenumber.pyは[こちら](https://amateur-engineer-blog.com/prime/)の素数判定のコードを参考に製作しました。誠にありがとうございます。
