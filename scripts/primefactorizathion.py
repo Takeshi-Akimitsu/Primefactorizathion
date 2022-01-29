@@ -6,17 +6,26 @@ from std_msgs.msg import String
 s = 0
 
 def cb(prime):
-    n = prime.data[len(prime.data)-1]
-    m = prime.data[len(prime.data)-2]
     prime_list = list(prime.data)
+    n = prime_list[len(prime_list)-1]
+    m = prime_list[len(prime_list)-2]
     prime_list.remove(n)
     global s
+
     
-    number = []
-    if n == m:
-        s = n
+    if n == m & n == 0:
+        s = ('{0} is not primenumber'.format(n))
+
+    elif n == m & n == 1:
+        s = ('{0} is not primenumber'.format(n))
+
+    elif n == m:
+        s = ('{0} is primenumber'.format(n))
 
     else:
+        l = n
+        number = []
+
         for x in range(0,len(prime_list)-1):
             while True:
                 if n % prime_list[x] == 0:
@@ -54,7 +63,9 @@ def cb(prime):
 
         primefactorizathion_list = [*map("^".join,zip(number2,number1))]
 
-        s = '*'.join(primefactorizathion_list)
+        answer = '*'.join(primefactorizathion_list)
+
+        s = ('{0} = {1}'.format(l,answer))
 
 if __name__ == '__main__': 
         rospy.init_node('primefactorizathion')
