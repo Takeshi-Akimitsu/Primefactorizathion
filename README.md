@@ -24,10 +24,21 @@ catkin_make
 ```
 roscore
 ```
-
-# アンインストール
+端末2でprimenumber.pyを実行する。
 ```
-sudo rmmod mymotor 
+rosrun Primefactorizathion primenumber.py
+```
+端末3でprimenumber.pyがPublishしたデータを取り出せるようにする。
+```
+rostopic echo /primenumber
+```
+端末4でprimefactorizathion.pyを実行する。
+```
+rosrun Primefactorizathion primefactorizathion.py
+```
+端末5でprimefactorizathion.pyがPublishしたデータを取り出せるようにする。
+```
+rostopic echo /primefactorizathion
 ```
 
 # 実行結果
