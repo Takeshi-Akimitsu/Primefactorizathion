@@ -49,5 +49,4 @@ https://youtu.be/cU3D8GxwP2c
 https://amateur-engineer-blog.com/prime/
 
 # 謝辞
-このデバイスドライバは[三渕優太さん](https://github.com/MibuchiYuta/Control_DCmotor_RaspberryPi
-)のコードを参考に製作しました。誠にありがとうございます。
+このパッケージのprimenumber.pyは[こちら](https://amateur-engineer-blog.com/prime/)の素数判定のコードを参考に製作しました。誠にありがとうございます。
